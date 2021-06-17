@@ -14,10 +14,21 @@ body{
     width: 70%;
 }
 
-.clearfix{
+.clearfix::after{
     content:"";
     display: table;
     clear: both;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
 }
 /* FINE generale */
 
@@ -41,10 +52,6 @@ nav{
     height: 100%;
     padding: 15px;
     width: calc(100% / 5);
-}
-
-nav img{
-    height: 100%;
 }
 
 nav ul{
@@ -96,7 +103,7 @@ header section{
 }
 
 header section h1{
-    font-size: 50px;
+    color: white;
 }
 
 header section .testo{
@@ -115,14 +122,61 @@ header section .button{
 header section .button.black{
     color: white;
     background-color: rgb(46, 46, 46);
+    margin-left: 20px;
 }
 /* FINE header section */
 /* FINE header */
 
 /* INIZIO main */
 /* INIZIO prima sezione light */
+.container.light .immagine{
+    float: left;
+    width: 60%;
+    padding: 120px 0;
+}
 
+.container.light .testo{
+    float: left;
+    width: 40%;
+
+    padding: 150px 0 0 60px;
+}
 /* FINE prima sezione light */
+
+/* INIZIO prima sezione dark */
+.background-dark{
+    background-color: rgb(243, 243, 243);
+}
+
+.container.dark .immagine{
+    float: left;
+    width: 60%;
+    padding: 120px 0;
+}
+
+.container.dark .testo{
+    float: left;
+    width: 40%;
+
+    padding: 150px 60px 0 0;
+}
+/* FINE prima sezione dark */
+
+/* INIZIO seconda sezione light */
+.container.light-2 .immagine{
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.container.light-2 .testo{
+    float: left;
+    width: 100%;
+
+    padding: 150px 0 0 0px;
+    text-align: center;
+}
+/* FINE seconda sezione light */
 /* FINE main */
 
 /* INIZIO debug */
@@ -136,5 +190,13 @@ header section .button.black{
 
 .debug .light{
     background-color: salmon;
+}
+
+.debug .dark{
+    background-color: indigo;
+}
+
+.debug .light-2{
+    background-color: lawngreen;
 }
 /* FINE debug */
