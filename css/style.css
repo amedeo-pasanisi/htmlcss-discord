@@ -10,10 +10,8 @@ body{
 }
 
 .container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    margin: auto;
+    width: 70%;
 }
 
 .clearfix{
@@ -23,14 +21,16 @@ body{
 }
 /* FINE generale */
 
-.nav-background{
-    height: 50px;
+/* INIZIO nav */
+.background-nav{
     background-color: royalblue;
 }
-/* INIZIO nav */
+
 nav{
+    height: 60px;
     width: 100%;
-    height: 50px;
+
+    font-size: 13px;
 }
 
 .spazio-nav{
@@ -39,7 +39,8 @@ nav{
 }
 
 .spazio-nav.logo{
-    padding: 10px;
+    height: 100%;
+    padding: 15px;
     width: calc(100% / 5);
 }
 
@@ -48,13 +49,14 @@ nav img{
 }
 
 nav ul{
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
     width: calc((100% / 5) * 3);
 }
 
 nav li{
     display: inline-block;
+    margin-right: 10px;
 }
 
 nav a{
@@ -68,7 +70,7 @@ nav a:hover{
 }
 
 .spazio-nav.accesso{
-    line-height: 50px;
+    line-height: 60px;
     text-align: right;
     width: calc(100% / 5);
 }
@@ -83,15 +85,43 @@ nav a:hover{
 /* FINE nav */
 
 /* INIZIO header section */
-header section{
-    color: white;
+.background-header-section{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
+header section{
+    color: white;
+    text-align: center;
+    padding: 70px;
+    height: 400px;
+}
 
+header section h1{
+    font-size: 50px;
+}
+
+header section .testo{
+    padding: 40px 90px 30px 90px;
+}
+
+header section .button{
+    display: inline-block;
+    color: black;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+header section .button.black{
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
 /* FINE header section */
 
 /* INIZIO debug */
-.debug{
+.debug .container{
     background-color: lightgray;
 }
 
