@@ -26,6 +26,13 @@ h1{
     margin-bottom: 30px;
 }
 
+.button{
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
 img{
     height: 100%;
     width: 100%;
@@ -82,11 +89,7 @@ nav a:hover{
 }
 
 .spazio-nav.accesso .button{
-    display: inline-block;
-    line-height: 30px;
-    padding: 0 10px;
     background-color: white;
-    border-radius: 15px;
 }
 /* FINE nav */
 
@@ -111,7 +114,6 @@ header section .testo{
 }
 
 header section .button{
-    display: inline-block;
     color: black;
     line-height: 50px;
     padding: 0 30px;
@@ -177,7 +179,35 @@ header section .button.black{
     text-align: center;
 }
 /* FINE seconda sezione light */
+
+/* INIZIO sezione download */
+.download{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.stelle{
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    height: 50px;
+    width: 540px;
+    padding-top: 25px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.download .button{
+    background-color: royalblue;
+    color: white;
+}
+/* FINE sezione download */
 /* FINE main */
+
+/* INIZIO footer */
+footer{
+    background-color: rgb(58, 58, 58);
+}
+/* FINE footer */
 
 /* INIZIO debug */
 .debug nav{
@@ -199,4 +229,9 @@ header section .button.black{
 .debug .light-2{
     background-color: lawngreen;
 }
+
+.debug .download{
+    background-color: lightgreen;
+}
+
 /* FINE debug */
