@@ -21,6 +21,7 @@ body{
 }
 /* FINE generale */
 
+/* INIZIO header */
 /* INIZIO nav */
 .background-nav{
     background-color: royalblue;
@@ -28,8 +29,6 @@ body{
 
 nav{
     height: 60px;
-    width: 100%;
-
     font-size: 13px;
 }
 
@@ -94,7 +93,6 @@ header section{
     color: white;
     text-align: center;
     padding: 70px;
-    height: 400px;
 }
 
 header section h1{
@@ -119,12 +117,15 @@ header section .button.black{
     background-color: rgb(46, 46, 46);
 }
 /* FINE header section */
+/* FINE header */
+
+/* INIZIO main */
+/* INIZIO prima sezione light */
+
+/* FINE prima sezione light */
+/* FINE main */
 
 /* INIZIO debug */
-.debug .container{
-    background-color: lightgray;
-}
-
 .debug nav{
     background-color: red;
 }
@@ -133,4 +134,7 @@ header section .button.black{
     background-color: seagreen;
 }
 
+.debug .light{
+    background-color: salmon;
+}
 /* FINE debug */
